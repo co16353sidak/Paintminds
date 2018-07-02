@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Paint Minds | Write your Story</title>
+  <link rel="icon" href="sample_1.jpeg">
+  <link type="text/css" rel="stylesheet" href="master.css">
+  <link rel="stylesheet" href="bootstrap.css">
+  <link rel="stylesheet" href="quill.snow.css">
+  <link rel="stylesheet" href="fontawesome-all.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,500" rel="stylesheet">
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.css'>
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/css/perfect-scrollbar.min.css'>
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light about fixed-top nav-fill">
+    <a class="navbar-brand" href="index.html"><img src="Picture2.png" alt="logo" class="img-rounded logo" height="100px" width="200px"></a>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item active btn-lg ">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item btn-lg">
+          <a class="nav-link" href="#">Goto Account</a>
+        </li>
+        <li class="nav-item btn-lg">
+          <a class="nav-link" href="#">Feed</a>
+        </li>
+        <li class="nav-item btn-lg">
+          <a class="nav-link" href="#">Settings</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+  <div class="container main">
+    <div class="jumbotron" style="margin-top: 30px;">
+      <h1 class="text-center">
+        Submit your Own Story !
+      </h1>
+      <hr class="alert-danger">
+      <p class="text-center" style="font-size: 20px;">Got a story you would like to share ? well then start writing, it's as easy as picking up a pen.</p>
+    </div>
+
+    <div class="jumbotron storyform">
+
+      <form>
+        <fieldset class="form-group">
+          <label for="Subject">Describe your story in a few words</label>
+          <input type="text" class="form-control" id="Subject" placeholder="A heading or a title" style="font-size: 20px;">
+        </fieldset>
+        <fieldset class="form-group">
+          <div id="container">
+          <div id="editor-container">
+          </div>
+        </div>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="uploadstory">Or upload your story.</label><br>
+          <input type="file" class="form-control-file btn btn-light" id="uploadstory">
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="broadtag">Assign a broad category to your story</label><br>
+          <input class="form-control" type="text" id="broadtag" name="broadtag" required>
+        </fieldset>
+        <fieldset class="form-group">
+          <label for="specifictag">Assign a specific category to your story</label><br>
+          <input class="form-control" type="text" id="specifictag" name="specifictag" required>
+        </fieldset>
+        <div class="checkbox">
+          <label>
+          <input type="checkbox" class="form-control" style="font-size: 40px;" required><br> I accept the Terms and Conditions
+        </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+  <footer class="card-footer text-center">
+    <strong>Copyright: 2018 @ blewminds.inc </strong>
+    <a href="#">Go to the top</a>
+
+    <img src="logo_white.jpeg" alt="1" class="img img-thumbnail" height="69px" width="169px">
+    <img src="logo_black.jpeg" alt="2" class="img img-thumbnail" height="60px" width="169px">
+    <img src="2.jpg" alt="3" class="img-thumbnail" height="74px" width="169px"><br>
+    <hr>
+    <div class="links">
+      <a href="https://twitter.com/blewminds" target="_blank" class="icon-button twitter"><i class="fab fa-twitter"></i><span></span></a>
+      <a href="https://www.facebook.com/blewmindsleadership/" target="_blank" class="icon-button facebook"><i class="fab fa-facebook-f"></i><span></span></a>
+      <a href="https://plus.google.com/106184716938917777344" target="_blank" class="icon-button google-plus"><i class="fab fa-google-plus-g"></i><span></span></a>
+      <a href="https://www.instagram.com/blewmindsconsulting/" class="icon-button instagram"><i class="fab fa-instagram"></i><span></span></a>
+      <a href="https://www.linkedin.com/company/blewminds/" target="_blank" class="icon-button linkedin"><i class="fab fa-linkedin-in"></i><span></span></a>
+      <a href="https://www.youtube.com/channel/UC1A90pbIZmcEt11XOlZmOWg/videos" target="_blank" class="icon-button youtube"><i class="fab fa-youtube"></i><span></span></a>
+    </div>
+  </footer>
+
+  <script src="jquery.js" charset="utf-8"></script>
+  <script src="popper.js" charset="utf-8"></script>
+  <script src="bootstrap.js" charset="utf-8"></script>
+  <script src="quill.js" charset="utf-8"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/spectrum/1.7.1/spectrum.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.6.7/js/min/perfect-scrollbar.jquery.min.js'></script>
+  <script type="text/javascript">
+  var Delta = Quill.import('delta');
+var quill = new Quill('#editor-container', {
+  modules: {
+    toolbar: [
+     [{ header: [1, 2, false] }],
+     ['bold', 'italic', 'underline'],
+     ['image', 'code-block']
+   ]
+
+  },
+  placeholder: 'Compose an epic...',
+  theme: 'snow'
+});
+
+// Store accumulated changes
+var change = new Delta();
+quill.on('text-change', function(delta) {
+  change = change.compose(delta);
+});
+
+// Save periodically
+setInterval(function() {
+  if (change.length() > 0) {
+    console.log('Saving changes', change);
+    /*
+    Send partial changes
+    $.post('/your-endpoint', {
+      partial: JSON.stringify(change)
+    });
+
+    Send entire document
+    $.post('/your-endpoint', {
+      doc: JSON.stringify(quill.getContents())
+    });
+    */
+    change = new Delta();
+  }
+}, 5*1000);
+
+// Check for unsaved data
+window.onbeforeunload = function() {
+  if (change.length() > 0) {
+    return 'There are unsaved changes. Are you sure you want to leave?';
+  }
+}
+
+</script>
+</body>
+
+</html>
